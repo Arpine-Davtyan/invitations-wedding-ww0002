@@ -16,7 +16,6 @@ const Hero = () => {
 
     return (
         <section className="hero bg-section">
-
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -27,7 +26,6 @@ const Hero = () => {
                     Together with their families
                 </motion.h4>
 
-
                 <motion.h1 variants={fadeUp}>
                     {weddingInfo.name1}
                     <span className="marked-text flex-col-center">
@@ -36,12 +34,10 @@ const Hero = () => {
                     {weddingInfo.name2}
                 </motion.h1>
 
-
                 <motion.div
                     variants={scaleIn}
                     className="w-16 h-px bg-foreground opacity-25 mx-auto"
                 />
-
 
                 <motion.p
                     variants={fadeUp}
@@ -57,9 +53,7 @@ const Hero = () => {
                 >
                     {weddingInfo.location}
                 </motion.p>
-
             </motion.div>
-
 
             <motion.button
                 variants={fade}
@@ -77,7 +71,6 @@ const Hero = () => {
                     weight="light"
                 />
             </motion.button>
-
         </section>
     );
 };

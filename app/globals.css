@@ -80,6 +80,10 @@
     @apply text-[10px] text-primary uppercase tracking-[4px] mt-4 font-jost;
   }
 
+  .btn-map {
+    @apply mt-6 inline-flex items-center gap-2 rounded-full border border-primary px-6 py-3 hover:bg-primary hover:text-background transition-colors duration-300;
+  }
+
   .form-label {
     @apply text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
   }

@@ -19,11 +19,13 @@ export const scheduleItems = [
         title: "Church Ceremony",
         location: "Basilica of Sant'Abbondio",
         icon: "ChurchIcon",
+        mapUrl: "https://maps.app.goo.gl/vRpRz2HEA7UmEaDp8"
     },
     {
         time: "17:00",
         title: "Wedding Ceremony",
         location: "Villa Serena · Lake Como, Italy",
         icon: "CheersIcon",
+        mapUrl: "https://maps.app.goo.gl/uaKqcCZXPysxHo726"
     }
 ];

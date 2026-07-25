@@ -2,8 +2,8 @@
 
 import { motion } from "motion/react";
 
-import { scheduleItems } from "@/lib/contstants";
-import { ChurchIcon, CheersIcon } from "@phosphor-icons/react";
+import { scheduleItems, weddingInfo } from "@/lib/contstants";
+import { ChurchIcon, CheersIcon, MapPinIcon } from "@phosphor-icons/react";
 
 import { fadeUp, scaleIn, staggerContainer } from "@/lib/animations";
 
@@ -26,11 +26,9 @@ const Schedule = () => {
                         variants={fadeUp}
                         className="flex-col-center gap-1"
                     >
-
                         <motion.h4 variants={fadeUp}>
                             {item.title}
                         </motion.h4>
-
 
                         <motion.div
                             variants={scaleIn}
@@ -53,7 +51,6 @@ const Schedule = () => {
                             )}
                         </motion.div>
 
-
                         <motion.span
                             variants={fadeUp}
                             className="text-4xl text-primary font-cormorant-garamond mb-2"
@@ -61,19 +58,25 @@ const Schedule = () => {
                             {item.time}
                         </motion.span>
 
-
                         <motion.p
                             variants={fadeUp}
                             className="text-md text-primary font-light"
                         >
                             {item.location}
                         </motion.p>
-
+                        <motion.a
+                            variants={fadeUp}
+                            href={item.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-map"
+                        >
+                            <MapPinIcon size={20} weight="fill" />
+                            Open in Maps
+                        </motion.a>
                     </motion.div>
                 ))}
-
             </motion.div>
-
         </section>
     );
 };
