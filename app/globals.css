@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBF8F2;
+  --primary: #6f695d;
+  --section: #F6F1E9;
+  --dark: #22201b;
+  --marked: #8b9382;
+  --paper: #fbf8f2;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-section: var(--section);
+  --color-dark: var(--dark);
+  --color-marked: var(--marked);
+  --color-paper: var(--paper);
+
+  --font-jost: var(--font-jost);
+  --font-cormorant-garamond: var(--font-cormorant-garamond);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility max-size {
+  @apply max-w-[1024px];
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl sm:text-8xl text-dark text-center font-thin font-cormorant-garamond my-6;
+  }
+
+  h2 {
+    @apply text-3xl text-marked font-thin italic font-cormorant-garamond;
+  }
+
+  h3 {
+    @apply text-3xl sm:text-5xl text-dark text-center font-cormorant-garamond;
+  }
+
+  h4 {
+    @apply text-[10px] sm:text-xs text-center font-jost uppercase tracking-[4px] my-1;
+  }
+
+  footer {
+    @apply bg-section flex-col-center gap-4 px-6 py-14 border-t border-primary/20;
+  }
+}
+
+@layer components {
+  .hero {
+    @apply min-h-screen relative flex-col-center py-24;
+  }
+
+  .section {
+    @apply flex-col-center px-6 py-16 sm:py-20;
+  }
+
+  .marked-text {
+    @apply text-2xl sm:text-4xl text-marked text-center italic font-cormorant-garamond my-1;
+  }
+
+  .countdown-item {
+    @apply flex-col-center ;
+  }
+
+  .countdown-item-number {
+    @apply text-3xl sm:text-6xl text-dark font-thin font-cormorant-garamond;
+  }
+
+  .countdown-item-text {
+    @apply text-[10px] text-primary uppercase tracking-[4px] mt-4 font-jost;
+  }
+
+  .form-label {
+    @apply text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
+  }
+
+  .form-item {
+    @apply flex flex-col w-full;
+  }
+
+  .form-input {
+    @apply font-jost border-b border-primary/50 py-2.5 placeholder:text-primary/50 focus:outline-none focus:border-primary/80 focus:placeholder:text-primary/80 transition-colors duration-300;
+  }
+
+  .form-radio-label {
+    @apply flex h-fit px-2 py-3 cursor-pointer items-center justify-center border transition border-dark duration-300;
+  }
+
+  .input-number {
+    @apply appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none;
+  }
+
+  .btn {
+    @apply w-full bg-dark text-paper border cursor-pointer py-3.5 font-jost uppercase text-[10px] tracking-[4px] hover:bg-paper hover:text-dark hover:border-dark transition duration-300;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary);
+  font-family: var(--font-jost);
 }
