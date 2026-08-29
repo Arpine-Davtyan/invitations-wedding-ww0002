@@ -21,6 +21,10 @@
   --font-cormorant-garamond: var(--font-cormorant-garamond);
 }
 
+@utility hide-scrollbar {
+  @apply scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }

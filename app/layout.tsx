@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jost.variable} ${cormorantGaramond.variable} h-full antialiased`}
+      className={`${jost.variable} ${cormorantGaramond.variable} h-full antialiased hide-scrollbar`}
     >
       <body className="min-h-full flex flex-col">
         {children}

@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-import { scheduleItems, weddingInfo } from "@/lib/contstants";
+import { scheduleItems } from "@/lib/contstants";
 import { ChurchIcon, CheersIcon, MapPinIcon } from "@phosphor-icons/react";
 
 import { fadeUp, scaleIn, staggerContainer } from "@/lib/animations";
