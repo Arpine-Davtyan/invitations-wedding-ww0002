@@ -89,7 +89,7 @@
   }
 
   .form-label {
-    @apply text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
+    @apply text-[8px] sm:text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
   }
 
   .form-item {

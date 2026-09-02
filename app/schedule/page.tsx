@@ -32,7 +32,7 @@ const Schedule = () => {
 
                         <motion.div
                             variants={scaleIn}
-                            className="flex-center w-[55px] h-[55px] mt-8"
+                            className="flex-center w-14 h-14 mt-8"
                         >
                             {item.icon === "ChurchIcon" && (
                                 <ChurchIcon
@@ -60,7 +60,7 @@ const Schedule = () => {
 
                         <motion.p
                             variants={fadeUp}
-                            className="text-md text-primary font-light"
+                            className="text-md text-center text-primary font-light"
                         >
                             {item.location}
                         </motion.p>
