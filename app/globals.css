@@ -101,7 +101,7 @@
   }
 
   .form-radio-label {
-    @apply flex h-fit text-xs px-2 py-3 cursor-pointer items-center justify-center border transition border-dark duration-300;
+    @apply flex h-fit text-[10px] px-1 py-3 cursor-pointer items-center justify-center border transition border-dark duration-300;
   }
 
   .input-number {
