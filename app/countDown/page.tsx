@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-
 import Title from "@/components/Title";
 import CountdownTimer from "@/components/CountDownTimer";
 
