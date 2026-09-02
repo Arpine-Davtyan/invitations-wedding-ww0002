@@ -89,7 +89,7 @@
   }
 
   .form-label {
-    @apply text-[8px] sm:text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
+    @apply text-[10px] font-jost text-primary uppercase tracking-[4px] my-2;
   }
 
   .form-item {
@@ -101,7 +101,7 @@
   }
 
   .form-radio-label {
-    @apply flex h-fit px-2 py-3 cursor-pointer items-center justify-center border transition border-dark duration-300;
+    @apply flex h-fit text-xs px-2 py-3 cursor-pointer items-center justify-center border transition border-dark duration-300;
   }
 
   .input-number {
